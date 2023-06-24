@@ -1,0 +1,95 @@
+:root {
+  --primary: #092a66;
+  --bg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/*navbar*/
+.navbar {
+  padding: 1.4rem 7%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar .navbar-nav a {
+  color: #f1f1f1;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: grey;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid grey;
+  transform: scaleX(0);
+  transition: 0.1s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f1f1f1;
+  font-style: italic;
+}
+
+/*awal sectiom*/
+.awal {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/img.2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*media Queries*/
+/*laptop*/
+@media (max-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/*mobile*/
+@media (max-width: 425px) {
+  html {
+    font-size: 55%;
+  }
+}
