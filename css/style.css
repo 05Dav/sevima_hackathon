@@ -16,7 +16,7 @@ body {
   font-family: "poppins", sans-serif;
   background-color: var(--bg);
   color: #fff;
-  /* min-height: 2000px; */
+  min-height: 4000px;
 }
 
 /*navbar*/
@@ -91,6 +91,7 @@ body {
 .awal .isi h1 {
   font-size: 3rem;
   font-weight: 700;
+  text-shadow: 2px 2px 3px rgba(0, 1, 3, 0.5);
 }
 
 .awal .isi a {
@@ -100,6 +101,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   border-radius: 1rem;
+  box-shadow: 2px 2px 3px rgba(0, 1, 3, 0.5);
   line-height: 4rem;
 }
 
@@ -110,7 +112,6 @@ body {
 /*section kedua*/
 .kedua {
   min-height: 100vh;
-  display: flex;
   background-image: url("../img/img3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,18 +122,55 @@ body {
   color: navy;
   text-align: center;
   font-size: 3rem;
-  padding: 8rem 7%;
-  margin-left: 43%;
+  padding: 8rem 7% 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .kedua .tentang {
-  margin-right: 50rem;
+  display: flex;
+  padding: 0 7%;
 }
+
+.kedua .tentang .tentang-img {
+  flex: 1 1 45rem;
+}
+
+.kedua .tentang .tentang-img img {
+  width: 100%;
+  box-shadow: 2px 2px 3px rgba(0, 1, 3, 0.5);
+}
+
+.kedua .tentang .isi {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.kedua .tentang .isi h3 {
+  color: black;
+  font-size: 3rem;
+}
+
+.kedua .tentang .isi p {
+  color: black;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/*section ketiga*/
+.tanya h1 {
+  color: navy;
+  padding: 8rem 7% 1.4rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
 /*media Queries*/
-/*laptop*/
-@media (max-width: 1440px) {
+
+/*dekstop*/
+@media (max-width: 2560px) {
   html {
-    font-size: 75%;
+    font-size: 100%;
   }
 }
 
@@ -172,6 +210,10 @@ body {
   .navbar .navbar-nav.active a:hover::after {
     transform: scaleX(0.2);
   }
+}
+
+.kedua .tentang {
+  flex-wrap: wrap;
 }
 
 /*mobile*/
